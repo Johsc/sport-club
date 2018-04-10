@@ -1,0 +1,19 @@
+
+<div id="app-planning">
+    <h1>Planning</h1>
+    <div class='dates'>
+        <h3>{{ currentMonth }} {{ currentYear }}</h3>
+        <div class="change-dates">
+            <img (click)="changeWeek(-7)" src="/assets/angle-left.svg"/>
+            <img (click)="changeWeek(7)" id="next-week" src="/assets/angle-right.svg"/>
+        </div>
+        <ul>
+            <li *ngFor="let day of weekDays; let i = index" [ngClass]="{'active': i == dayActiveIndex}"
+                (click)="changeDay(i)">
+                {{ day }}<br/>
+                {{ weekDates[i].format('D') }}
+            </li>
+        </ul>
+    </div>
+    <app-activity class="clearfix" [day]="selectDay"></app-activity>
+</div>

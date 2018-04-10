@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "firstname": "Johann",
+        "name": "S",
+        "email": "joh.schillio@gmail.com",
+        "phone": "06 30 88 41 09",
+        "abonnement": {
+            "id": 1,
+            "name": "Standard",
+            "limitDay": 1,
+            "limitWeek": 2
+        },
+        "inscriptions": [],
+        "role": "admin"
+    },
+    {
+        "id": 2,
+        "firstname": "Jérémy",
+        "name": "M",
+        "email": null,
+        "phone": null,
+        "abonnement": {
+            "id": 1,
+            "name": "Standard",
+            "limitDay": 1,
+            "limitWeek": 2
+        },
+        "inscriptions": [],
+        "role": "joueur"
+    },
+    {
+        "id": 3,
+        "firstname": "Florian",
+        "name": "C",
+        "email": null,
+        "phone": null,
+        "abonnement": {
+            "id": 1,
+            "name": "Standard",
+            "limitDay": 1,
+            "limitWeek": 2
+        },
+        "inscriptions": [],
+        "role": "joueur"
+    },
+    {
+        "id": 4,
+        "firstname": "Joelle",
+        "name": "K",
+        "email": null,
+        "phone": null,
+        "abonnement": {
+            "id": 1,
+            "name": "Standard",
+            "limitDay": 1,
+            "limitWeek": 2
+        },
+        "inscriptions": [],
+        "role": "joueur"
+    },
+    {
+        "id": 5,
+        "firstname": "Lionel",
+        "name": "M",
+        "email": null,
+        "phone": null,
+        "abonnement": {
+            "id": 1,
+            "name": "Standard",
+            "limitDay": 1,
+            "limitWeek": 2
+        },
+        "inscriptions": [],
+        "role": "joueur"
+    },
+    {
+        "id": 6,
+        "firstname": "Sébastien",
+        "name": "B",
+        "email": null,
+        "phone": null,
+        "abonnement": {
+            "id": 1,
+            "name": "Standard",
+            "limitDay": 1,
+            "limitWeek": 2
+        },
+        "inscriptions": [],
+        "role": "joueur"
+    }
+]

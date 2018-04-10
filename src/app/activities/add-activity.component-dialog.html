@@ -1,0 +1,18 @@
+<div class="add-header">
+    <h2>Ajouter une activité</h2>
+</div>
+<form (ngSubmit)="submit(form)" #form="ngForm">
+    <mat-form-field id="add-activity">
+        <input matInput placeholder="Nom de l'activité" name="activity"
+            [(ngModel)]="activity.name">
+    </mat-form-field>
+    <ul>
+        <li>Limite d'inscriptions :</li>
+        <li>{{ activity.limitCreneau }}</li>
+    </ul>
+    <mat-slider [max]="max" [min]="min" [step]="step"
+        [(ngModel)]="activity.limitCreneau" name="limit"></mat-slider>
+    <div>
+        <button mat-button>Valider</button>
+    </div>
+</form>

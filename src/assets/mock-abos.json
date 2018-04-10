@@ -1,0 +1,8 @@
+[
+    {
+        "id": 1,
+        "name": "Standard",
+        "limitDay": 1,
+        "limitWeek": 2
+    }
+]

@@ -1,0 +1,102 @@
+h1, h2, h4 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: darkred;
+    line-height: 2rem
+}
+
+h2 {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: normal;
+    line-height: 2rem;
+}
+
+h4.not-full {
+    color: darkgreen;
+    text-transform: lowercase;
+    margin-top: 2rem;
+}
+
+h4.full {
+    color: darkred;
+    text-transform: uppercase;
+}
+
+#border {
+    width: 15%;
+    height: 0.4rem;
+    background-color: gainsboro;
+    margin: 2rem auto 0 auto;
+}
+
+div.add-members {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+
+div.add-members img {
+    float: right;
+    padding-top: 1.2em;
+    margin-left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+
+ul {
+    padding: 0;
+    width: 75%;
+    margin: 1rem auto 1rem auto;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+ul img {
+    width: 1.5rem;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:nth-child(2) {
+    float: right;
+}
+
+mat-hint {
+    font-size: 0.6rem;
+    width: 100%;
+}
+
+button {
+    position: relative;
+    top: 0.5rem;
+    left: 50%;
+    margin-bottom: 1rem;
+    transform: translate(-50%, 0);
+    background-color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: darkred;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid darkred;
+    border-radius: 4rem;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    color: white;
+    background-color: darkred;
+}

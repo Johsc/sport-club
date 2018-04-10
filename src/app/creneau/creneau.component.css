@@ -1,0 +1,9 @@
+div.creneau-not-full {
+    color: white;
+    background-color: #4F4F4F;
+}
+
+div.creneau-full {
+    color: white;
+    background-color: darkred;
+}

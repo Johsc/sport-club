@@ -1,0 +1,24 @@
+<h1>{{ data.dayshift.activity.name }}</h1>
+<h2>{{ data.creneau.date }} <br/>
+    {{ data.creneau.hDebut }} - {{ data.creneau.hFin }}
+</h2>
+<div id="border"></div>
+<div class="add-members">
+    <mat-form-field id="select-members">
+        <mat-select placeholder="Liste des membres" [formControl]="members" multiple>
+            <mat-option *ngFor="let member of data.membersList"
+                [value]="member" [disabled]="checkLimit(member)">
+                    {{ member.firstname }} {{ member.name }} <br/>
+                    <mat-hint *ngIf="checkLimit(member)">{{ message1 }}</mat-hint>
+            </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <img src="/assets/plus-circle.svg" (click)="inscription()"/>
+</div>
+<ul *ngFor="let inscr of data.creneau.registred">
+    <li>{{ inscr.firstname }} {{ inscr.name }}</li>
+    <li><img src="/assets/trash-o.svg" (click)="delete(inscr)"/></li>
+</ul>
+<!-- <h4>Encore {{ counter }} place(s) disponible(s)</h4> -->
+<h4 [ngClass]="{'full': full, 'not-full': !full}">{{ messageLimit }}</h4>
+<div><button (click)="deleteCreneau()">Supprimer</button></div>

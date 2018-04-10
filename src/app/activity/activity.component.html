@@ -1,0 +1,17 @@
+<div id="planning">
+    <div class="col" id="col-h">
+        <div class="hours" id="title-h">Heures</div>
+        <div class="hours" *ngFor="let hour of hours">{{ hour }}</div>
+    </div>
+    <div class="col" *ngFor="let dayshift of planning.dayshifts; let i = index">
+        <div class="row-th">{{ dayshift.activity.name }}</div>
+        <div class="row" *ngFor="let hour of hours; let j = index">
+            <app-creneau *ngIf="planning.dayshifts[i].creneaux[j]"
+                [creneau]="planning.dayshifts[i].creneaux[j]"
+                [dayshift]="planning.dayshifts[i]" [hourIndex]="j"></app-creneau>
+            <app-add-creneau *ngIf="planning.dayshifts[i].creneaux[j] == null"
+                [day]="day" [dayshift]="planning.dayshifts[i]" [hourIndex]="j"
+                [activityIndex]="i"></app-add-creneau>
+        </div>
+    </div>
+</div>

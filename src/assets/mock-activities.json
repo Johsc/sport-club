@@ -1,0 +1,27 @@
+[
+    {
+        "id": 1,
+        "name": "Aerobic",
+        "limitCreneau": 4
+    },
+    {
+        "id": 2,
+        "name": "Weightlifting",
+        "limitCreneau": 4
+    },
+    {
+        "id": 3,
+        "name": "Flexibility",
+        "limitCreneau": 4
+    },
+    {
+        "id": 4,
+        "name": "Bodyguard",
+        "limitCreneau": 4
+    },
+    {
+        "id": 5,
+        "name": "Wod",
+        "limitCreneau": 4
+    }
+]

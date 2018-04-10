@@ -1,0 +1,71 @@
+
+div#menu-member {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 9.8rem;
+    height: 100%;
+    background-color: #4F4F4F;
+    box-shadow: 2px 0 2px gray
+}
+
+#logo {
+    position: relative;
+    width: 75%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin-top: 20%;
+    margin-bottom: 1.5rem;
+}
+
+#menu-member a {
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 4.5rem;
+    padding-bottom: 1.2rem;
+    color: white;
+    width: 100%;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#menu-member a#icon-dashboard {
+    background: url('/assets/dashboard-solid.svg') no-repeat top center;
+    background-position-y: 1.2rem;
+    background-size: 3rem;
+}
+
+#menu-member a#icon-calendar {
+    background: url('/assets/calendar-solid.svg') no-repeat top center;
+    background-position-y: 1.2rem;
+    background-size: 3rem;
+}
+
+#menu-member a#icon-inscriptions {
+    background: url('/assets/tasks-solid.svg') no-repeat top center;
+    background-position-y: 1.2rem;
+    background-size: 3rem;
+}
+
+#menu-member a#icon-chat {
+    background: url('/assets/chat-bubble-solid.svg') no-repeat top center;
+    background-position-y: 1.2rem;
+    background-size: 3rem;
+}
+
+#menu-member a#icon-dashboard:hover,
+#menu-member a#icon-calendar:hover,
+#menu-member a#icon-inscriptions:hover,
+#menu-member a#icon-chat:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#menu-member a#icon-dashboard:focus,
+#menu-member a#icon-calendar:focus,
+#menu-member a#icon-inscriptions:focus,
+#menu-member a#icon-chat:focus {
+    background-color: darkred;
+}

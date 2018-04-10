@@ -1,0 +1,17 @@
+<h1>{{ data.dayshift.activity.name }}</h1>
+<h2>{{ data.day }} <br/>
+    {{ data.hDebut }} - {{ data.hFin }}
+</h2>
+<div id="border"></div>
+<ul>
+    <li>Ouvrir le créneau</li>
+    <li><mat-slide-toggle [color]="color" [(ngModel)]="checked"></mat-slide-toggle></li>
+</ul>
+<ul>
+    <li>Limite d'inscriptions :</li>
+    <li [ngClass]="{ 'off': !checked }">{{ limit }}</li>
+</ul>
+<mat-slider [disabled]="!checked" [max]="max" [min]="min"
+    [step]="step" [(ngModel)]="limit">
+</mat-slider>
+<div *ngIf="checked"><button (click)="addCreneau()">Valider</button></div>

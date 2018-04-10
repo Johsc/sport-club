@@ -1,0 +1,10 @@
+<div id="app-members">
+    <h1>Gestion des membres</h1>
+    <ul>
+        <li routerLink="/club/{{id}}/members/list" [ngClass]="{'active': clicked}"
+            (click)="clicked = true">Membres</li>
+        <li routerLink="/club/{{id}}/members/abonnements" [ngClass]="{'active': !clicked}"
+            (click)="clicked = false">Abonnements</li>
+    </ul>
+    <router-outlet></router-outlet>
+</div>

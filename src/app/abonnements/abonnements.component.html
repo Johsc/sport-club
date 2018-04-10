@@ -1,0 +1,30 @@
+<div class="list-activities">
+    <mat-list class="list-item">
+        <mat-list-item id="activities-header">
+            <h3 class="title">Nom</h3>
+            <p class="title">Limite quoti.</p>
+            <p class="title">Limite hebdo.</p>
+            <div id="col-btn" class="actions-btn">
+            <a (click)="addAbo()">Ajouter</a>
+            </div>
+        </mat-list-item>
+        <mat-list-item *ngFor="let abo of abonnements">
+            <h3>{{ abo.name }}</h3>
+            <div class="limits">
+                <img src="/assets/minus-circle-line.svg" (click)="editLimitDay(abo, -1)"/>
+                <span>{{ abo.limitDay }}</span>
+                <img src="/assets/plus-circle-line.svg" (click)="editLimitDay(abo, 1)"/>
+            </div>
+            <div class="limits">
+                <img src="/assets/minus-circle-line.svg" (click)="editLimitWeek(abo, -1)"/>
+                <span>{{ abo.limitWeek }}</span>
+                <img src="/assets/plus-circle-line.svg" (click)="editLimitWeek(abo, 1)"/>
+            </div>
+            <div class="actions-btn">
+                <!-- <img id="btn-edit" src="/assets/note-line.svg"/> -->
+                <img id="btn-delete" src="/assets/trash-line.svg"
+                    (click)="delete(abo.id)"/>
+            </div>
+        </mat-list-item>
+    </mat-list>
+</div>

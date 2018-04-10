@@ -1,0 +1,12 @@
+<div class="add-header">
+    <h2>Ajouter un abonnement</h2>
+</div>
+<form (ngSubmit)="submit(form)" #form="ngForm">
+    <mat-form-field id="add-abo">
+        <input matInput placeholder="Nom de l'abonnement" name="abo"
+            [(ngModel)]="abo.name">
+    </mat-form-field>
+    <div>
+        <button mat-button>Valider</button>
+    </div>
+</form>

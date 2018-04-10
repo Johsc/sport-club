@@ -1,0 +1,81 @@
+h1, h2 {
+    text-align: center;
+}
+
+h1 {
+    font-size: 1.5rem;
+    color: darkred;
+    line-height: 2rem
+}
+
+h2 {
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    font-weight: normal;
+    line-height: 2rem;
+}
+
+#border {
+    width: 15%;
+    height: 0.4rem;
+    background-color: gainsboro;
+    margin: 2rem auto 0 auto;
+}
+
+ul {
+    padding: 0;
+    width: 75%;
+    margin: 3rem auto 1rem auto;
+    text-align: left;
+    vertical-align: bottom;
+}
+
+ul img {
+    width: 1.5rem;
+}
+
+ul li {
+    display: inline-block;
+}
+
+ul li:nth-child(2) {
+    float: right;
+    font-weight: bold;
+    font-size: 1.2rem;
+    line-height: 100%;
+}
+
+ul li.off {
+    color: gray;
+}
+
+mat-slider {
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 70%;
+}
+
+button {
+    position: relative;
+    top: 1rem;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    background-color: white;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: dimgray;
+    padding: 0.6rem 1.2rem;
+    border: 1px solid dimgray;
+    border-radius: 4rem;
+    cursor: pointer;
+}
+
+button:focus {
+    outline: none;
+}
+
+button:hover {
+    color: white;
+    background-color: dimgray;
+}

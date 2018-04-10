@@ -1,0 +1,116 @@
+
+div#app-planning {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 100%;
+    padding-left: 9.8rem;
+    z-index: -2;
+    box-sizing: border-box;
+}
+
+
+/* DATES */
+
+.dates {
+    position: relative;
+    top: 0;
+    width: 88%;
+    margin: auto;
+    margin-bottom: 1rem;
+    background-color: white;
+    box-shadow: 2px 2px 2px gray;
+    text-align: center;
+    padding-top: 18px;
+    height: 105px;
+    z-index: 2;
+    /* border: 1px dashed red */
+}
+
+.dates h3 {
+    position: relative;
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+    text-transform: capitalize;
+}
+
+.dates ul {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex: 7;
+    padding: 0;
+    text-align: center;
+}
+
+.dates .change-dates {
+    position: absolute;
+    top: 15%;
+    width: 100%;
+    text-align: center;
+}
+
+.dates .change-dates img {
+    width: 25px;
+    height: 25px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.dates .change-dates img:focus {
+    outline: none
+}
+
+.dates #next-week {
+    margin-left: 90%;
+}
+
+.dates li {
+    list-style: none;
+    flex: 1;
+    padding: 0.5rem 0;
+    line-height: 1.45rem;
+    cursor: pointer;
+}
+
+.dates li:hover {
+    background-color: gainsboro;
+}
+
+.dates li:focus {
+    outline: none
+}
+
+.dates .active {
+    font-weight: bold;
+    border-bottom: 4px solid black;
+}
+
+/* PLANNING */
+
+app-activity {
+    box-sizing: border-box;
+    display: block;
+    width: 88%;
+    overflow-x: scroll;
+    margin: auto;
+    margin-bottom: 50px;
+    background-color: white;
+    box-shadow: 2px 2px 2px gray;
+}
+
+::-webkit-scrollbar {
+    height: 0.5rem;  /* remove scrollbar space */
+    width: 0rem;
+    background: transparent;  /* optional: just make scrollbar invisible */
+}
+
+::-webkit-scrollbar-thumb {
+    background: #4F4F4F;
+}

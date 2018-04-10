@@ -1,0 +1,16 @@
+<div id="app-clubs">
+    <img id="logo-crossfit" src="/assets/crossfit-logo-w.png"/>
+    <h2>Recherchez votre club</h2>
+    <div class="list-clubs" *ngFor="let club of clubs; let i = index">
+        <div class="infos-club">
+            <h3>{{ club.name }}</h3>
+            <p>{{ club.address }}</p>
+            <p>{{ club.website }}</p>
+            <p>{{ club.email }}</p>
+            <p>{{ club.phone }}</p>
+        </div>
+        <div class="buttons">
+            <button (click)="loginDialog(i)">Choisir</button>
+        </div>
+    </div>
+</div>

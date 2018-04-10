@@ -1,0 +1,18 @@
+
+<div class="login-box">
+    <h2>Connectez-vous</h2>
+    <form>
+        <mat-form-field class="input">
+            <input matInput placeholder="Email" name="email"
+                [(ngModel)]="identifiant">
+        </mat-form-field>
+        <mat-form-field class="input">
+            <input matInput placeholder="Password" name="password"
+                [type]="hide ? 'password' : 'text'">
+            <mat-icon matSuffix (click)="hide = !hide">
+                {{hide ? 'visibility' : 'visibility_off'}}
+            </mat-icon>
+        </mat-form-field>
+        <button (click)="login()">Valider</button>
+    </form>
+</div>

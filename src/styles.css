@@ -1,1 +1,171 @@
 /* You can add global styles to this file, and also import other style files */
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.clearfix {
+    display: inline-block;
+}
+
+* html .clearfix {
+    height: 1%;
+}
+
+.clearfix {
+    display: block;
+}
+
+body, html {
+    font-family: 'Oswald', 'sans-serif';
+    background-color: #F2EFEF;
+}
+
+h1 {
+    margin-top: 2rem;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+mat-dialog-container {
+    padding: 0 !important;
+}
+
+/* CSS des éléments material du component members */
+
+mat-list#list-members {
+    padding-top: 0 !important;
+}
+
+mat-form-field#search {
+    position: relative;
+    width: 52%;
+    margin: 0 auto;
+    font-family: 'Oswald';
+    padding-left: 2.5rem;
+}
+
+mat-list-item#list-members-header div.mat-list-text {
+    border-bottom: 1px solid grey;
+}
+
+mat-form-field#search div.mat-input-wrapper.mat-form-field-wrapper {
+    /* padding-bottom: 0 !important; */
+}
+
+mat-list.list-item  {
+    position: relative;
+    width: 100%;
+    margin: auto;
+}
+
+mat-list.list-item.mat-list .mat-list-item .mat-list-item-content {
+    padding: 0 2.5rem;
+    width: 100%;
+}
+
+mat-list.list-item.mat-list .mat-list-item {
+    margin-bottom: 1.5rem;
+    display: flex;
+    flex-direction: row;
+}
+
+mat-list.list-item .mat-list-item#list-members-header:hover {
+    background-color: white;
+}
+
+mat-list.list-item.mat-list .mat-list-item:hover {
+    background-color: #F4F2F3;
+}
+
+mat-list.list-item.mat-list .mat-list-item .mat-list-text {
+    padding-left: 2rem;
+}
+
+mat-list.list-item.mat-list .mat-list-item .mat-list-avatar {
+    width: 3rem;
+    height: 3rem;
+    border: 1px solid darkslategrey;
+}
+
+/* CSS menu activities */
+
+mat-list-item#activities-header.mat-list-item:hover {
+    background-color: white;
+    cursor: default;
+}
+
+
+/* CSS du select form de la liste des members dans les pop-ups  */
+
+mat-form-field#select-members {
+    position: relative;
+    width: 65%;
+    color: darkslategrey
+}
+
+mat-form-field#select-members label {
+    color: black !important;
+}
+
+mat-form-field#select-members .mat-form-field-ripple {
+    background-color: gray;
+}
+
+mat-option {
+    line-height: 1rem !important;
+}
+
+mat-slide-toggle.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-thumb {
+    background-color: darkred;
+}
+
+mat-slide-toggle.mat-slide-toggle.mat-checked:not(.mat-disabled) .mat-slide-toggle-bar {
+    background-color: dimgray;
+}
+
+mat-slider.mat-slider-disabled .mat-slider-thumb, .mat-slider-disabled .mat-slider-track-background, .mat-slider-disabled .mat-slider-track-fill {
+    background-color: rgba(0,0,0,.26) !important;
+}
+
+mat-slider.mat-accent .mat-slider-thumb, .mat-accent .mat-slider-thumb-label, .mat-accent .mat-slider-track-fill {
+    background-color: darkred;
+}
+
+/* CSS des inputs pour l'édition des membres */
+
+mat-form-field.edit-dialog {
+    position: relative;
+    width: 85%;
+    margin: auto;
+    font-family: 'Oswald', 'sans-serif';
+}
+
+/* CSS de la pop-up pour l'ajout d'activités */
+mat-form-field#add-activity, mat-form-field#add-abo {
+    width: 60%;
+    text-align: center;
+}
+
+mat-form-field#add-activity input,
+mat-form-field#add-abo input {
+    text-align: center;
+    font-family: 'Oswald', 'sans-serif';
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+mat-form-field#add-activity span label.mat-form-field-label,
+mat-form-field#add-abo span label.mat-form-field-label {
+    color: darkred;
+}
+
+mat-form-field#add-activity span.mat-form-field-ripple,
+mat-form-field#add-abo span.mat-form-field-ripple {
+    background-color: darkred;
+}

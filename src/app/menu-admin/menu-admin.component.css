@@ -1,0 +1,81 @@
+
+div#menu-admin {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    text-align: center;
+    top: 0;
+    left: 0;
+    width: 9.8rem;
+    height: 100%;
+    background-color: darkred;
+    box-shadow: 2px 0 2px gray
+}
+
+img#logo {
+    width: 7rem;
+    left: 50%;
+    margin: 1.5rem auto;
+    clear: both;
+}
+
+#menu-admin a {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 4.25rem;
+    padding-bottom: 1.2rem;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#menu-admin a#icon-dashboard {
+    background: url('/assets/dashboard-solid.svg') no-repeat top center;
+    background-position-y: 1.2rem;
+    background-size: 3rem;
+}
+
+#menu-admin a#icon-calendar {
+    background: url('/assets/calendar-solid.svg') no-repeat top center;
+    background-position-y: 1.2rem;
+    background-size: 3rem;
+}
+
+#menu-admin a#icon-activities {
+    background: url('/assets/clipboard-solid.svg') no-repeat top center;
+    background-position-y: 1.2rem;
+    background-size: 3rem;
+}
+
+#menu-admin a#icon-members {
+    background: url('/assets/users-solid.svg') no-repeat top center;
+    background-position-y: 1.2rem;
+    background-size: 3rem;
+}
+
+#menu-admin a#icon-dashboard:hover,
+#menu-admin a#icon-calendar:hover,
+#menu-admin a#icon-activities:hover,
+#menu-admin a#icon-members:hover {
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+#menu-admin a#icon-dashboard.active,
+#menu-admin a#icon-calendar.active,
+#menu-admin a#icon-activities.active,
+#menu-admin a#icon-members.active {
+    background-color: #4F4F4F;
+}
+
+img#logout {
+    position: relative;
+    margin-top: 1rem;
+    margin-bottom: 10rem;
+    width: 2rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    cursor: pointer;
+}

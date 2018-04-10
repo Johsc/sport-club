@@ -1,0 +1,81 @@
+div#app-clubs {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #333;
+    overflow-y: scroll;
+}
+
+img#logo-crossfit {
+    position: relative;
+    margin-top: 4rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 15rem;
+    height: auto;
+}
+
+h2 {
+    position: relative;
+    width: 60%;
+    margin: 3rem auto 2rem auto;
+    color: white;
+}
+
+div.list-clubs {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    padding: 1rem 2rem;
+    margin: auto;
+    border-left: 0.5rem solid darkred;
+    background-color: white;
+    box-sizing: border-box;
+}
+
+div.list-clubs .infos-club {
+    width: 75%;
+}
+
+div.list-clubs .buttons {
+    width: 25%;
+}
+
+h3 {
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+p {
+    color: #333;
+    margin: 0.5rem 0;
+}
+
+div.list-clubs .buttons button {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.8rem 2rem;
+    color: darkred;
+    font-family: 'Oswald';
+    font-weight: 500;
+    text-transform: uppercase;
+    background-color: white;
+    border: 1px solid darkred;
+    cursor: pointer;
+}
+
+div.list-clubs .buttons button:hover {
+    color: white;
+    background-color: darkred
+}
+
+div.list-clubs .buttons button:focus {
+    outline: none;
+    color: white;
+    background-color: darkred
+}

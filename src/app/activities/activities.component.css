@@ -1,0 +1,93 @@
+
+div#app-activities {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 88%;
+}
+
+/* CONTENU */
+
+div.list-activities {
+    width: 70%;
+    margin: 3% auto 3% auto;
+    padding: 1rem 0;
+    text-align: center;
+    background-color: white;
+    box-shadow: 2px 2px 2px gray
+}
+
+a {
+    position: relative;
+    float: right;
+    font-size: 1rem;
+    font-family: 'Oswald', 'sans-serif';
+    padding: 0.5rem 1.2rem 0.5rem 1.2rem;
+    cursor: pointer;
+    border: 1px solid #4F4F4F;
+}
+
+a:hover {
+    background-color: darkred;
+    color: white
+}
+
+h3.title, p.title {
+    color: grey;
+}
+
+p.title {
+    width: 30%;
+}
+
+div.limitCreneau {
+    width: 30%;
+}
+
+h3 {
+    font-weight: normal;
+    font-family: 'Oswald';
+    text-align: left;
+    text-transform: uppercase;
+    width: 40%;
+    padding-left: 2rem;
+}
+
+div.limitCreneau > * {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    height: 100%;
+}
+
+div.limitCreneau span {
+    padding: 0 1rem;
+}
+
+div.limitCreneau img {
+    width: 1.2rem;
+    cursor: pointer;
+}
+
+p {
+    font-family: 'Oswald';
+    text-align: center;
+}
+
+div.actions-btn {
+    width: 30%;
+    padding-right: 2.5rem;
+    text-align: right;
+}
+
+
+img#btn-delete, img#btn-edit {
+    padding: 0 0.5rem;
+    width: 1.5rem;
+    cursor: pointer;
+}
+
+div#col-btn {
+    position: relative;
+    right: -1.2rem;
+}

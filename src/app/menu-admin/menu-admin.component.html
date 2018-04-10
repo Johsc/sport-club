@@ -1,0 +1,8 @@
+<div id="menu-admin" *ngIf="displayMenu()">
+    <img alt="logo-crossfit" id="logo" src="/assets/crossfit-logo-w.png"/>
+    <a id="icon-dashboard" routerLink="/club/{{id}}/dashboard" routerLinkActive="active">Dashboard</a>
+    <a id="icon-calendar" routerLink="/club/{{id}}/planning" routerLinkActive="active">Planning</a>
+    <a id="icon-members" routerLink="/club/{{id}}/members" routerLinkActive="active">Members</a>
+    <a id="icon-activities" routerLink="/club/{{id}}/activities" routerLinkActive="active">Activities</a>
+    <img id="logout" src="/assets/logout-line.svg" routerLink="/clubs"/>
+</div>

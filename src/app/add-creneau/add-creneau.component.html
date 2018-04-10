@@ -1,0 +1,4 @@
+<div [ngClass]="{'disabled': !disabled()}">
+    <img src="/assets/plus-circle.svg" (click)="activateCreneau()"
+        *ngIf="disabled()"/>
+</div>

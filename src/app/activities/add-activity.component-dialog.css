@@ -1,0 +1,47 @@
+div.add-header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    margin-bottom: 2.5rem;
+    background-color: #4F4F4F;
+}
+
+h2 {
+    color: white;
+    margin: 0;
+    text-align: center;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+
+form {
+    text-align: center;
+}
+
+mat-slider {
+    position: relative;
+    width: 70%;
+    margin-bottom: 1rem;
+}
+
+ul {
+    text-align: center;
+    width: 100%;
+    padding: 0;
+}
+
+li {
+    display: inline-block;
+}
+
+li:nth-child(2) {
+    margin-left: 7rem;
+    font-weight: 600;
+}
+
+button {
+    font-family: 'Oswald', 'sans-serif';
+    text-transform: uppercase;
+}

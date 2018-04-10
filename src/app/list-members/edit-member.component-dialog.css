@@ -1,0 +1,33 @@
+
+div.edit-header {
+    position: relative;
+    top: 0;
+    width: 100%;
+    background-color: #4F4F4F;
+}
+
+div.edit-infos {
+    text-align: center;
+    padding-top: 2rem;
+}
+
+h2 {
+    color: white;
+    margin: 0;
+    text-align: left;
+    padding: 1.2rem;
+    font-size: 1.2rem;
+    font-weight: normal;
+}
+
+div.edit-infos button {
+    float: right;
+    margin: 1rem 2.1rem 2rem 0;
+    font-family: 'Oswald';
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+
+mat-select, mat-option {
+    font-family: 'Oswald', 'sans-serif';
+}

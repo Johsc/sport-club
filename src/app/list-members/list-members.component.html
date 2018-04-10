@@ -1,0 +1,27 @@
+<div class="list-members">
+    <mat-form-field id="search">
+        <input matInput placeholder="Rechercher un membre" [(ngModel)]="search"
+            (input)="filter()"/>
+        <mat-icon matSuffix>search</mat-icon>
+    </mat-form-field>
+    <button (click)="editMember()">Ajouter</button>
+    <mat-list id="list-members" class="list-item">
+        <mat-list-item id="list-members-header">
+            <h3 class="title">Nom des membres</h3>
+            <p class="title">Abonnement</p>
+        </mat-list-item>
+        <mat-list-item *ngFor="let member of displayMembers | async">
+            <div class="member">
+                <img matListAvatar src="/assets/user-solid.svg" alt="member-picture"/>
+                <h3 id="member-name" (click)="infosMember(member)">
+                    {{ member.firstname }} {{ member.name }}
+                </h3>
+            </div>
+            <p>{{ member.abonnement.name }}</p>
+            <div class="actions-btn">
+                <img id="btn-edit" (click)="editMember(member)" src="/assets/note-line.svg"/>
+                <img id="btn-delete" src="/assets/trash-line.svg" (click)="delete(member.id)"/>
+            </div>
+        </mat-list-item>
+    </mat-list>
+</div>

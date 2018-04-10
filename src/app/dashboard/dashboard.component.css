@@ -1,0 +1,10 @@
+div#app-dashboard {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 88%;
+}
+
+h2 {
+    text-align: center;
+}

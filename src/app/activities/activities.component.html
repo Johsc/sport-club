@@ -1,0 +1,26 @@
+<div id="app-activities">
+    <h1>Activities</h1>
+    <div class="list-activities">
+        <mat-list class="list-item">
+            <mat-list-item id="activities-header">
+                <h3 class="title">Nom</h3>
+                <p class="title">Limite d'inscriptions</p>
+                <div id="col-btn" class="actions-btn">
+                <a (click)="addAct()">Ajouter</a>
+                </div>
+            </mat-list-item>
+            <mat-list-item *ngFor="let activity of activities">
+                <h3>{{ activity.name }}</h3>
+                <div class="limitCreneau">
+                    <img src="/assets/minus-circle-line.svg" (click)="editLimit(activity, -1)"/>
+                    <span>{{ activity.limitCreneau }}</span>
+                    <img src="/assets/plus-circle-line.svg" (click)="editLimit(activity, 1)"/>
+                </div>
+                <div class="actions-btn">
+                    <!-- <img id="btn-edit" src="/assets/note-line.svg"/> -->
+                    <img id="btn-delete" (click)="delete(activity.id)" src="/assets/trash-line.svg"/>
+                </div>
+            </mat-list-item>
+        </mat-list>
+    </div>
+</div>
