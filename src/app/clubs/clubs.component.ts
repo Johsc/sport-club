@@ -28,8 +28,7 @@ export class ClubsComponent implements OnInit {
         let dialogRef = this.dialog.open(LoginComponent, {
             width: '35%',
             data: {
-                clubIndex: i,
-                club: this.clubs[i]
+                clubIndex: i
             }
         });
     }

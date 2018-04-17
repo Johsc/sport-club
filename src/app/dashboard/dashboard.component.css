@@ -2,9 +2,67 @@ div#app-dashboard {
     position: absolute;
     top: 0;
     right: 0;
-    width: 88%;
+    width: 100%;
+    height: 100%;
+    z-index: -2;
+    padding-left: 9.8rem;
+    text-align: center;
+    box-sizing: border-box;
 }
 
 h2 {
     text-align: center;
+}
+
+div.col {
+    position: relative;
+    display: inline-block;
+    vertical-align: top;
+    width: 42%;
+    margin-bottom: 50px;
+}
+
+div.col:last-child {
+    margin-left: 2rem;
+}
+
+div.col .box {
+    width: 100%;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: white;
+    box-shadow: 2px 0 2px gray;
+    box-sizing: border-box;
+}
+
+div.col .box h3 {
+    margin: 0;
+    padding-bottom: 0.5rem;
+    font-size: 1rem;
+    font-weight: 500;
+    text-align: left;
+    border-bottom:  1px solid #CCC;
+}
+
+div.col .box p {
+    text-align: justify;
+    font-size: 1rem;
+    font-weight: 300;
+    margin-bottom: 0;
+}
+
+div.col .box ul {
+    padding-left: 1rem;
+}
+
+div.col .box li {
+    color: darkred;
+    text-align: left;
+    font-size: 1rem;
+    font-weight: 200;
+    margin-bottom: 0.5rem;
+}
+
+div.col .box li p {
+    color: black;
 }

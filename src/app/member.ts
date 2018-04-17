@@ -24,6 +24,8 @@ export class Member {
         this.firstname = firstname;
         this.name = name;
         this.abonnement = abo;
+        this.email = email;
+        this.phone = phone;
         this.inscriptions = [];
         this.role = role;
     }

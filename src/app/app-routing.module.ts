@@ -17,7 +17,7 @@ const routes: Routes = [
     path: 'club/:id',
     component: ClubComponent,
     children: [
-        { path: '', redirectTo: 'planning', pathMatch: 'full' },
+        { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
         { path: 'dashboard', component: DashboardComponent },
         { path: 'planning', component: PlanningComponent },
         { path: 'activities', component: ActivitiesComponent },
